@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Cross</title>
+  <style>
+   .visit-done {
+  display: block;       /* mobile/tablet: column layout */
+  gap: 20px;
+  padding: 10px;
+}
+
+.visit_container,
+.map-container {
+  width: 100%;          /* full width on mobile */
+  margin-bottom: 20px;
+}
+
+.map-container iframe {
+  width: 100%;          /* responsive iframe */
+  height: 800px;        /* mobile height */
+  border: 0;
+  border-radius: 12px;
+}
+
+/* ---------------- Large Screens (lg) ---------------- */
+@media (max-width: 1024px) {  /* lg screens */
+  .visit-done {
+    display: flex;       /* side by side */
+    gap: 40px;
+  }
+
+  .visit_container,
+  .map-container {
+    flex: 1;             /* equal width */
+    margin-bottom: 0;    /* remove spacing */
+  }
+
+  .map-container iframe {
+    height: 600px;       /* larger height for desktop */
+  }
+}
+@media (max-width:1024px){
+    
+    .visit-done {
+    display: flex;
+    gap: 30px;           /* dono columns ke beech gap */
+    flex-wrap: wrap;     
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px 0;
+}
+
+.visit_container {
+    flex: 1 1 600px;     /* grow, shrink, base width */
+}
+
+.map-container {
+    flex: 1 1 600px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 800px;
+    border: 0;
+}
+
+}
+
+.map-container {
+  width: 100%;
+  max-width: 600px;   
+  height: 700px;      
+  margin: 20px auto;  
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;   
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+  </style>
+</head>
+<body>
+
+  <main>
+        <div class="visit-done">
+        <div class="visit_container">
+       <div class="visit" >
+        <div >
+             <h2 style="font-size: 30px; ">Visit One Of Our Countries Now</h2>
+
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+
+       <div class="switzerland">
+  <img src="country-01.jpg" alt="Switzerland" />
+
+  <div class="switch">
+    <h2>SWITZERLAND</h2>
+    <div class="switch1">Explore More</div>
+    <div class="city1" style="font-size: 12px;">Europe</div>
+
+    <div class="para">
+        Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.
+    </div>
+
+    <hr style="width: 270px;"/>
+   
+  </div>
+
+  
+</div>
+
+<div>
+    <div class="arrange" style=" gap: 10px; display: flex;">
+    <i class="fa-solid fa-user"></i>
+     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+                     8.66 Mil
+                       <div
+                        style="font-size: 14px;
+                        "
+                      >
+                        People
+                      </div>
+                    
+                    </div>
+
+                    <div class="arrange1" style=" gap: 10px;display: flex;">
+   <i class="fa-solid fa-globe"></i>
+     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+                     41.290 
+                       <div
+                        style="font-size: 14px;
+                        "
+                      >
+                        km2
+                      </div>
+                    </div>
+                      <div class="arrange2" style=" gap: 10px;display: flex; flex-direction: column;">
+ <i class="fa-solid fa-house"></i>
+     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+                     
+                       <div
+                        style="font-size: 14px;
+                        "
+                      >
+                        $1.100.200
+                      </div>
+                    
+                    </div>
+                 
+</div>
+</div>
+
+
+</div>
+
+<hr style=" width: 300px;margin-left: 280px;"/>
+
+<div style=" " class="need">
+    Need Direction ? <i class="fa-regular fa-arrow-right"></i>
+</div>
+
+
+<hr style=" width: 590px;"/>
+
+ <div class="switzerland">
+  <img src="country-02.jpg" alt="Switzerland" />
+
+  <div class="switch">
+    <h2>CARIBBEAN</h2>
+    <div class="switch1">Explore More</div>
+    <div class="city1" style="font-size: 12px;">North America</div>
+
+    <div class="para">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+    </div>
+
+    <hr style="width: 270px;"/>
+   
+  </div>
+
+  
+</div>
+
+<div>
+    <div class="arrange" style=" gap: 10px; display: flex;">
+    <i class="fa-solid fa-user"></i>
+     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+                    44.48 Mil
+                       <div
+                        style="font-size: 14px;
+                        "
+                      >
+                        People
+                      </div>
+                    
+                    </div>
+
+                    <div class="arrange1" style=" gap: 10px;display: flex;">
+   <i class="fa-solid fa-globe"></i>
+     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+                     275.400
+                       <div
+                        style="font-size: 14px;
+                        "
+                      >
+                        km2
+                      </div>
+                    </div>
+                      <div class="arrange2" style=" gap: 10px;display: flex; flex-direction: column;">
+ <i class="fa-solid fa-house"></i>
+     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+                     
+                       <div
+                        style="font-size: 14px;
+                        "
+                      >
+                        $946.000
+                      </div>
+                    
+                    </div>
+                 
+</div>
+</div>
+
+
+</div>
+
+<hr style=" width: 300px;margin-left: 20px;"/>
+
+<div style=" " class="need">
+    Need Direction ? <i class="fa-regular fa-arrow-right"></i>
+</div>
+
+
+<hr style=" width: 590px;"/>
+
+ <div class="switzerland">
+  <img src="country-03.jpg" alt="Switzerland" />
+
+  <div class="switch">
+    <h2>SWITZERLAND</h2>
+    <div class="switch1">Explore More</div>
+    <div class="city1" style="font-size: 12px;">Europe</div>
+
+    <div class="para">
+        Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.
+    </div>
+
+    <hr style="width: 270px;"/>
+   
+  </div>
+
+  
+</div>
+
+<div>
+    <div class="arrange" style=" gap: 10px; display: flex;">
+    <i class="fa-solid fa-user"></i>
+     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+                     8.66 Mil
+                       <div
+                        style="font-size: 14px;
+                        "
+                      >
+                        People
+                      </div>
+                    
+                    </div>
+
+                    <div class="arrange1" style=" gap: 10px;display: flex;">
+   <i class="fa-solid fa-globe"></i>
+     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+                     41.290 
+                       <div
+                        style="font-size: 14px;
+                        "
+                      >
+                        km2
+                      </div>
+                    </div>
+                      <div class="arrange2" style=" gap: 10px;display: flex; flex-direction: column;">
+ <i class="fa-solid fa-house"></i>
+     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+                     
+                       <div
+                        style="font-size: 14px;
+                        "
+                      >
+                        $1.100.200
+                      </div>
+                    
+                    </div>
+                 
+</div>
+</div>
+
+
+</div>
+
+<hr style=" width: 300px;margin-left: 280px;"/>
+
+<div style=" " class="need">
+    Need Direction ? <i class="fa-regular fa-arrow-right"></i>
+</div>
+
+
+<div class="choose">
+     <i class="fa-solid fa-arrow-left"></i>
+
+ <span >1</span>
+ <span>2</span>
+ <span>3</span>
+
+ <i class="fa-solid fa-arrow-right"></i>
+</div>
+
+</div>
+
+
+
+
+<!-- map -->
+
+<div class="map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51948.65982011673!2d-80.163602!3d25.941098000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1756833021551!5m2!1sen!2sth" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+ </div>
+
+    </main>
+
+</body>
+</html>
