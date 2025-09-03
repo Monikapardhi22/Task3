@@ -3,99 +3,423 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar with Cross</title>
-  <style>
-   .visit-done {
-  display: block;       /* mobile/tablet: column layout */
-  gap: 20px;
-  padding: 10px;
-}
-
-.visit_container,
-.map-container {
-  width: 100%;          /* full width on mobile */
-  margin-bottom: 20px;
-}
-
-.map-container iframe {
-  width: 100%;          /* responsive iframe */
-  height: 800px;        /* mobile height */
-  border: 0;
-  border-radius: 12px;
-}
-
-/* ---------------- Large Screens (lg) ---------------- */
-@media (max-width: 1024px) {  /* lg screens */
-  .visit-done {
-    display: flex;       /* side by side */
-    gap: 40px;
-  }
-
-  .visit_container,
-  .map-container {
-    flex: 1;             /* equal width */
-    margin-bottom: 0;    /* remove spacing */
-  }
-
-  .map-container iframe {
-    height: 600px;       /* larger height for desktop */
-  }
-}
-@media (max-width:1024px){
-    
-    .visit-done {
-    display: flex;
-    gap: 30px;           /* dono columns ke beech gap */
-    flex-wrap: wrap;     
-    justify-content: center;
-    align-items: flex-start;
-    margin: 40px 0;
-}
-
-.visit_container {
-    flex: 1 1 600px;     /* grow, shrink, base width */
-}
-
-.map-container {
-    flex: 1 1 600px;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 800px;
-    border: 0;
-}
-
-}
-
-.map-container {
-  width: 100%;
-  max-width: 600px;   
-  height: 700px;      
-  margin: 20px auto;  
-  border: 2px solid #ccc;
-  border-radius: 12px;
-  overflow: hidden;   
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-  </style>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <link rel="stylesheet" href="Page.css"/>
+  <title>Task 3</title>
 </head>
 <body>
+  <nav class="nav">
+      <div class="logo">
+        <img src="lofo2.png" alt="img" height="" width="" />
+      </div>
+      <input type="checkbox" id="menu-toggle" />
 
-  <main>
+      <!-- Hamburger Icon -->
+      <label for="menu-toggle" class="hamburger" style="font-size: 40px;font-weight: 100;"
+        >&#9776;</label>
+
+      <!-- Cross Icon -->
+      <label for="menu-toggle" class="cross" style="font-size: 40px">✖</label>
+
+      <!-- Menu Items -->
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <hr style="border: 0.1px solid rgb(243, 240, 240)" />
+        <li><a href="#">About</a></li>
+        <hr style="border: 0.3px solid rgb(243, 240, 240)" />
+        <li><a href="#">Deals</a></li>
+        <hr style="border: 0.3px solid rgb(243, 240, 240)" />
+        <li><a href="#">Reservation</a></li>
+        <hr style="border: 0.3px solid rgb(243, 240, 240)" />
+        <li><a href="#">Book Yours</a></li>
+      </ul>
+    </nav>
+ <header>
+      <div class="slider">
+        <div class="slides">
+          <div
+            class="slide"
+            style="
+              background-image: url('Caribbean.jpg');
+              background-size: cover;
+              background-position: center;
+              height: 1000px;
+              width: 100%;
+            "
+          >
+            <p>Take a Glimpse Into The Beautiful Country Of:</p>
+            <div class="city">Caribbean</div>
+            <button type="submit">Go There</button>
+            <div class="content">
+              <div class="first_row">
+                <div>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 5px;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <i class="fa-solid fa-user"></i>
+                    <div style="color: rgb(211, 209, 209); font-size: 14px">
+                      Population :
+                      <div
+                        style="
+                          color: rgb(34, 206, 206);
+                          font-weight: bold;
+                          font-size: 17px;
+                        "
+                      >
+                        44.48 M
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <i class="fa-solid fa-globe"></i>
+                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    Territory
+                    <div
+                      style="
+                        color: rgb(34, 206, 206);
+                        font-weight: bold;
+                        font-size: 17px;
+                      "
+                    >
+                      275.400 KM2
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="second_row">
+                <div  style="
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+                  ">
+                  <i class="fa-solid fa-house"></i> 
+                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    AVG Price:
+                    <div
+                      style="
+                        color: rgb(34, 206, 206);
+                        font-weight: bold;
+                        font-size: 17px;
+                      "
+                    >
+                      $946.000
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button type="submit" style="text-align: center; margin-right: 40px;">Explore More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="slide"
+            style="
+              background-image: url('switerland.jpg');
+              background-size: cover;
+              background-position: center;
+              height: 1000px;
+              width: 100%;
+            "
+          >
+            <p>Take a Glimpse Into The Beautiful Country Of:</p>
+            <div class="city">Switzerland</div>
+            <button type="submit">Go There</button>
+
+             <div class="content">
+              <div class="first_row">
+                <div>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 5px;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <i class="fa-solid fa-user"></i>
+                    <div style="color: rgb(211, 209, 209); font-size: 14px">
+                      Population :
+                      <div
+                        style="
+                          color: rgb(34, 206, 206);
+                          font-weight: bold;
+                          font-size: 17px;
+                        "
+                      >
+                       8.66 M
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <i class="fa-solid fa-globe"></i>
+                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    Territory
+                    <div
+                      style="
+                        color: rgb(34, 206, 206);
+                        font-weight: bold;
+                        font-size: 17px;
+                      "
+                    >
+                      41.290 KM2
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="second_row">
+                <div  style="
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+                  ">
+                  <i class="fa-solid fa-house"></i> 
+                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    AVG Price:
+                    <div
+                      style="
+                        color: rgb(34, 206, 206);
+                        font-weight: bold;
+                        font-size: 17px;
+                      "
+                    >
+                      $1.100.200
+
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button type="submit" style="text-align: center; margin-right: 40px;">Explore More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="slide"
+            style="
+              background-image: url('france.avif');
+              background-size: cover;
+              background-position: center;
+              height: 1000px;
+              width: 100%;
+            "
+          >
+            <p>Take a Glimpse Into The Beautiful Country Of:</p>
+            <div class="city">France</div>
+            <button type="submit">Go There</button>
+             <div class="content">
+              <div class="first_row">
+                <div>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 5px;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <i class="fa-solid fa-user"></i>
+                    <div style="color: rgb(211, 209, 209); font-size: 14px">
+                      Population :
+                      <div
+                        style="
+                          color: rgb(34, 206, 206);
+                          font-weight: bold;
+                          font-size: 17px;
+                        "
+                      >
+                        67.41 M
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <i class="fa-solid fa-globe"></i>
+                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    Territory
+                    <div
+                      style="
+                        color: rgb(34, 206, 206);
+                        font-weight: bold;
+                        font-size: 17px;
+                      "
+                    >
+                     551.500 KM2
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="second_row">
+                <div  style="
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+                  ">
+                  <i class="fa-solid fa-house"></i> 
+                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    AVG Price:
+                    <div
+                      style="
+                        color: rgb(34, 206, 206);
+                        font-weight: bold;
+                        font-size: 17px;
+                      "
+                    >
+                    $946.000
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button type="submit" style="text-align: center; margin-right: 40px;">Explore More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="slide"
+            style="
+              background-image: url('thailand.jpg');
+              background-size: cover;
+              background-position: center;
+              height: 1000px;
+              width: 100%;
+            "
+          >
+            <p>Take a Glimpse Into The Beautiful Country Of:</p>
+            <div class="city">Thailand</div>
+            <button type="submit">Go There</button>
+            <div class="content">
+              <div class="first_row">
+                <div>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 5px;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <i class="fa-solid fa-user"></i>
+                    <div style="color: rgb(211, 209, 209); font-size: 14px">
+                      Population :
+                      <div
+                        style="
+                          color: rgb(34, 206, 206);
+                          font-weight: bold;
+                          font-size: 17px;
+                        "
+                      >
+                      69.86 M
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <i class="fa-solid fa-globe"></i>
+                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    Territory
+                    <div
+                      style="
+                        color: rgb(34, 206, 206);
+                        font-weight: bold;
+                        font-size: 17px;
+                      "
+                    >
+                      513.120 KM2
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="second_row">
+                <div  style="
+                    display: flex;
+                    gap: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+                  ">
+                  <i class="fa-solid fa-house"></i> 
+                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    AVG Price:
+                    <div
+                      style="
+                        color: rgb(34, 206, 206);
+                        font-weight: bold;
+                        font-size: 17px;
+                      "
+                    >
+                      $165.450
+                    </div>
+                  </div>
+                </div>
+                <div style="text-align: center; margin-right: 20px;">
+                  <button type="submit" style="text-align: center; margin-right: 40px;">Explore More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
         <div class="visit-done">
-        <div class="visit_container">
-       <div class="visit" >
-        <div >
-             <h2 style="font-size: 30px; ">Visit One Of Our Countries Now</h2>
+          <div class="visit_container">
+ <div class="visit" >
+            <div >
+             <h2 style="font-size: 30px;padding-top: 20px; ">Visit One Of Our Countries Now</h2>
 
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+             <p style="color: aliceblue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
         </div>
 
        <div class="switzerland">
@@ -109,8 +433,8 @@
     <div class="para">
         Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.
     </div>
-
-    <hr style="width: 270px;"/>
+<hr/>
+    <!-- <hr style="width: 270px;"/> -->
    
   </div>
 
@@ -161,14 +485,14 @@
 
 </div>
 
-<hr style=" width: 300px;margin-left: 280px;"/>
+<!-- <hr style=" width: 300px; margin-left: 220px;"/> -->
 
-<div style=" " class="need">
-    Need Direction ? <i class="fa-regular fa-arrow-right"></i>
+<div class="need">
+    Need Direction ?  <i class="fa-solid fa-arrow-right"></i>
 </div>
 
 
-<hr style=" width: 590px;"/>
+<!-- <hr style=" width: 590px;"/> -->
 
  <div class="switzerland">
   <img src="country-02.jpg" alt="Switzerland" />
@@ -182,7 +506,7 @@
        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
     </div>
 
-    <hr style="width: 270px;"/>
+    <!-- <hr style="width: 270px;"/> -->
    
   </div>
 
@@ -231,30 +555,31 @@
 </div>
 
 
+
 </div>
 
-<hr style=" width: 300px;margin-left: 20px;"/>
+<!-- <hr style=" width: 300px;margin-left: 220px;"/> -->
 
-<div style=" " class="need">
-    Need Direction ? <i class="fa-regular fa-arrow-right"></i>
+<div  class="need">
+    Need Direction ? <i class="fa-solid fa-arrow-right"></i>
 </div>
 
 
-<hr style=" width: 590px;"/>
+<!-- <hr style=" width: 590px;"/> -->
 
  <div class="switzerland">
   <img src="country-03.jpg" alt="Switzerland" />
 
   <div class="switch">
-    <h2>SWITZERLAND</h2>
+    <h2>FRANCE</h2>
     <div class="switch1">Explore More</div>
     <div class="city1" style="font-size: 12px;">Europe</div>
 
     <div class="para">
-        Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.
+        We hope this WoOx template is useful for you, please support us a small amount of PayPal to info [at] templatemo.com for our survival. We really appreciate your contribution.
     </div>
 
-    <hr style="width: 270px;"/>
+    <!-- <hr style="width: 270px;"/> -->
    
   </div>
 
@@ -265,7 +590,7 @@
     <div class="arrange" style=" gap: 10px; display: flex;">
     <i class="fa-solid fa-user"></i>
      <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
-                     8.66 Mil
+                     67.41 Mil
                        <div
                         style="font-size: 14px;
                         "
@@ -278,7 +603,7 @@
                     <div class="arrange1" style=" gap: 10px;display: flex;">
    <i class="fa-solid fa-globe"></i>
      <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
-                     41.290 
+                     551.500 
                        <div
                         style="font-size: 14px;
                         "
@@ -294,7 +619,7 @@
                         style="font-size: 14px;
                         "
                       >
-                        $1.100.200
+                        $425.600
                       </div>
                     
                     </div>
@@ -305,10 +630,10 @@
 
 </div>
 
-<hr style=" width: 300px;margin-left: 280px;"/>
+<!-- <hr style=" width: 300px;margin-left: 220px;"/> -->
 
-<div style=" " class="need">
-    Need Direction ? <i class="fa-regular fa-arrow-right"></i>
+<div  class="need">
+    Need Direction ? <i class="fa-solid fa-arrow-right"></i>
 </div>
 
 
@@ -321,27 +646,46 @@
 
  <i class="fa-solid fa-arrow-right"></i>
 </div>
-
 </div>
 
 
 
 
-<!-- map -->
 
-<div class="map-container">
-  <iframe 
+
+
+          </div>
+          <div class="map_container">
+<iframe 
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51948.65982011673!2d-80.163602!3d25.941098000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1756833021551!5m2!1sen!2sth" 
     allowfullscreen="" 
     loading="lazy" 
     referrerpolicy="no-referrer-when-downgrade">
   </iframe>
-</div>
 
+          </div>
 
- </div>
-
+        </div>
     </main>
+    <footer>
+       
 
+           <div class="foot_1">
+            <div class="">
+                <h1>Are You Looking To Travel ?</h1>
+                <p>Make A Reservation By Clicking The Button</p>
+               
+            </div>
+             <button >Book Yours Now</button>
+           </div>
+           <div class="foot_2">
+            Copyright © 2036 WoOx Travel Company. All rights reserved.
+            <br/>
+Design: TemplateMo
+           </div>
+
+        
+    </footer>
+     
 </body>
 </html>
