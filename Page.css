@@ -13,6 +13,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body{
+  background-color: rgb(41, 41, 41);
+}
 .nav img {
   padding: 30px;
 }
@@ -1020,35 +1024,4 @@ footer {
     padding-top: 69px;
   }}
 
-  main {
-  margin: 0;          /* extra margin hatao */
-  padding: 0;         /* extra padding bhi hatao */
-}
-
-.map_container iframe {
-  margin-bottom: 0;   /* neeche ka gap hatao */
-}
-
-footer {
-  margin-top: 0;      /* footer upar se chipak jaye */
-}
- @media (max-width:768px){
-   main {
-  margin: 0;          /* extra margin hatao */
-  padding: 0;         /* extra padding bhi hatao */
-}
-
-.map_container iframe {
-  margin-bottom: 0;   /* neeche ka gap hatao */
-}
-
-footer {
-  margin-top: 0;      /* footer upar se chipak jaye */
-}
-
- }
-
- .visit-done {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
+  
