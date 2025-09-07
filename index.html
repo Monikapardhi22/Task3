@@ -22,17 +22,26 @@
 
       <!-- Hamburger Icon -->
       <label for="menu-toggle" class="hamburger" style="font-size: 40px;font-weight: 100;"
-        >&#9776;</label>
+        ><div style=" cursor:pointer;">
+  <div style="height:1.5px;width:26px; background:rgb(255, 255, 255); margin:5px 0;"></div>
+  <div style="height:2.5px;width:36px; background:rgb(255, 255, 255); margin:7px 0;"></div>
+  <div style="height:1.5px;width:26px; background:rgb(255, 255, 255); margin:5px 0;"></div>
+</div></label>
 
       <!-- Cross Icon -->
-      <label for="menu-toggle" class="cross" style="font-size: 40px">✖</label>
+      <label for="menu-toggle" class="cross" style="font-size: 40px;font-weight: 100;">
+        <div style="width:30px; height:30px; position:relative; cursor:pointer;">
+  <div style="position:absolute; top:13px; left:0; width:35px; height:2px; background:rgb(255, 255, 255); transform:rotate(45deg);"></div>
+  <div style="position:absolute; top:13px; left:0; width:35px; height:2px; background:rgb(255, 255, 255); transform:rotate(-45deg);"></div>
+</div>
+      </label>
 
       <!-- Menu Items -->
       <ul class="menu">
         <li><a href="#">Home</a></li>
         <hr style="border: 0.1px solid rgb(243, 240, 240)" />
         <li><a href="#">About</a></li>
-        <hr style="border: 0.3px solid rgb(243, 240, 240)" />
+        <hr style="border: 0.3px solid rgb(239, 233, 233)" />
         <li><a href="#">Deals</a></li>
         <hr style="border: 0.3px solid rgb(243, 240, 240)" />
         <li><a href="#">Reservation</a></li>
@@ -46,7 +55,7 @@
           <div
             class="slide"
             style="
-              background-image: url('Caribbean.jpg');
+              background-image: url('banner-01.jpg');
               background-size: cover;
               background-position: center;
               height: 1000px;
@@ -59,16 +68,16 @@
             <div class="content">
               <div class="first_row">
                 <div>
-                  <div
+                  <div class="i-gap"
                     style="
                       display: flex;
-                      gap: 5px;
+                     
                       justify-content: center;
                       align-items: center;
                     "
                   >
                     <i class="fa-solid fa-user"></i>
-                    <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    <div style="color: rgb(159, 152, 152); font-size: 12px">
                       Population :
                       <div
                         style="
@@ -82,16 +91,16 @@
                     </div>
                   </div>
                 </div>
-                <div
+                <div class="i-gap"
                   style="
                     display: flex;
-                    gap: 5px;
+                   
                     justify-content: center;
                     align-items: center;
                   "
                 >
                   <i class="fa-solid fa-globe"></i>
-                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                  <div style="color: rgb(159, 152, 152); font-size: 12px">
                     Territory
                     <div
                       style="
@@ -106,15 +115,16 @@
                 </div>
               </div>
               <div class="second_row">
-                <div  style="
+                <div  class="i-gap"
+                 style="
                     display: flex;
-                    gap: 5px;
+                    
                     justify-content: center;
                     align-items: center;
-                    margin-right: 10px;
+                    /* margin-right: 10px; */
                   ">
                   <i class="fa-solid fa-house"></i> 
-                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                  <div style="color: rgb(159, 152, 152); font-size: 12px">
                     AVG Price:
                     <div
                       style="
@@ -128,7 +138,7 @@
                   </div>
                 </div>
                 <div>
-                  <button type="submit" style="text-align: center; margin-right: 40px;">Explore More</button>
+                  <button type="submit" style="font-family: 'Poppin',sans-serif;text-align: center; margin-right: 30px; margin-bottom: 30px;letter-spacing: 1.5px;">Explore More</button>
                 </div>
               </div>
             </div>
@@ -137,7 +147,7 @@
           <div
             class="slide"
             style="
-              background-image: url('switerland.jpg');
+              background-image: url('banner-02.jpg');
               background-size: cover;
               background-position: center;
               height: 1000px;
@@ -151,16 +161,16 @@
              <div class="content">
               <div class="first_row">
                 <div>
-                  <div
+                  <div class="i-gap"
                     style="
                       display: flex;
-                      gap: 5px;
+                     
                       justify-content: center;
                       align-items: center;
                     "
                   >
                     <i class="fa-solid fa-user"></i>
-                    <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    <div style="color: rgb(159, 152, 152); font-size: 12px">
                       Population :
                       <div
                         style="
@@ -174,16 +184,16 @@
                     </div>
                   </div>
                 </div>
-                <div
+                <div class="i-gap"
                   style="
                     display: flex;
-                    gap: 5px;
+                  
                     justify-content: center;
                     align-items: center;
                   "
                 >
                   <i class="fa-solid fa-globe"></i>
-                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                  <div style="color: rgb(159, 152, 152); font-size: 12px">
                     Territory
                     <div
                       style="
@@ -198,15 +208,16 @@
                 </div>
               </div>
               <div class="second_row">
-                <div  style="
+                <div class="i-gap"
+                 style="
                     display: flex;
-                    gap: 5px;
+                  
                     justify-content: center;
                     align-items: center;
-                    margin-right: 10px;
+                    /* margin-right: 10px; */
                   ">
                   <i class="fa-solid fa-house"></i> 
-                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                  <div style="color: rgb(159, 152, 152); font-size: 12px">
                     AVG Price:
                     <div
                       style="
@@ -221,7 +232,7 @@
                   </div>
                 </div>
                 <div>
-                  <button type="submit" style="text-align: center; margin-right: 40px;">Explore More</button>
+                  <button type="submit" style="text-align: center; margin-right: 30px; margin-bottom: 30px;letter-spacing: 1.5px;font-family: 'Poppin',sans-serif;">Explore More</button>
                 </div>
               </div>
             </div>
@@ -230,7 +241,7 @@
           <div
             class="slide"
             style="
-              background-image: url('france.avif');
+              background-image: url('banner-03.jpg');
               background-size: cover;
               background-position: center;
               height: 1000px;
@@ -239,20 +250,20 @@
           >
             <p>Take a Glimpse Into The Beautiful Country Of:</p>
             <div class="city">France</div>
-            <button type="submit">Go There</button>
+             <button type="submit">Go There</button>
              <div class="content">
               <div class="first_row">
                 <div>
-                  <div
+                  <div class="i-gap"
                     style="
                       display: flex;
-                      gap: 5px;
+                     
                       justify-content: center;
                       align-items: center;
                     "
                   >
                     <i class="fa-solid fa-user"></i>
-                    <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    <div style="color: rgb(159, 152, 152); font-size: 12px">
                       Population :
                       <div
                         style="
@@ -266,16 +277,16 @@
                     </div>
                   </div>
                 </div>
-                <div
+                <div class="i-gap"
                   style="
                     display: flex;
-                    gap: 5px;
+                    
                     justify-content: center;
                     align-items: center;
                   "
                 >
                   <i class="fa-solid fa-globe"></i>
-                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                  <div style="color: rgb(159, 152, 152); font-size: 12px">
                     Territory
                     <div
                       style="
@@ -290,15 +301,16 @@
                 </div>
               </div>
               <div class="second_row">
-                <div  style="
+                <div class="i-gap"
+                 style="
                     display: flex;
-                    gap: 5px;
+                    
                     justify-content: center;
                     align-items: center;
-                    margin-right: 10px;
+                    /* margin-right: 10px; */
                   ">
                   <i class="fa-solid fa-house"></i> 
-                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                  <div style="color: rgb(159, 152, 152); font-size: 12px">
                     AVG Price:
                     <div
                       style="
@@ -312,7 +324,7 @@
                   </div>
                 </div>
                 <div>
-                  <button type="submit" style="text-align: center; margin-right: 40px;">Explore More</button>
+                  <button type="submit" style="letter-spacing: 1.5px;font-family: 'Poppin',sans-serif;text-align: center; margin-right: 30px; margin-bottom: 30px;">Explore More</button>
                 </div>
               </div>
             </div>
@@ -321,7 +333,7 @@
           <div
             class="slide"
             style="
-              background-image: url('thailand.jpg');
+              background-image: url('banner-04.jpg');
               background-size: cover;
               background-position: center;
               height: 1000px;
@@ -334,16 +346,15 @@
             <div class="content">
               <div class="first_row">
                 <div>
-                  <div
+                  <div class="i-gap"
                     style="
-                      display: flex;
-                      gap: 5px;
+                      display: flex;  
                       justify-content: center;
                       align-items: center;
                     "
                   >
                     <i class="fa-solid fa-user"></i>
-                    <div style="color: rgb(211, 209, 209); font-size: 14px">
+                    <div style="color: rgb(159, 152, 152); font-size: 12px">
                       Population :
                       <div
                         style="
@@ -357,16 +368,16 @@
                     </div>
                   </div>
                 </div>
-                <div
+                <div class="i-gap"
                   style="
                     display: flex;
-                    gap: 5px;
+                    
                     justify-content: center;
                     align-items: center;
                   "
                 >
                   <i class="fa-solid fa-globe"></i>
-                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                  <div style="color: rgb(159, 152, 152); font-size: 12px">
                     Territory
                     <div
                       style="
@@ -381,15 +392,16 @@
                 </div>
               </div>
               <div class="second_row">
-                <div  style="
+                <div class="i-gap" 
+                style="
                     display: flex;
-                    gap: 5px;
+                   
                     justify-content: center;
                     align-items: center;
-                    margin-right: 10px;
+                    /* margin-right: 10px; */
                   ">
                   <i class="fa-solid fa-house"></i> 
-                  <div style="color: rgb(211, 209, 209); font-size: 14px">
+                  <div style="color: rgb(159, 152, 152); font-size: 12px">
                     AVG Price:
                     <div
                       style="
@@ -403,37 +415,42 @@
                   </div>
                 </div>
                 <div style="text-align: center; margin-right: 20px;">
-                  <button type="submit" style="text-align: center; margin-right: 40px;">Explore More</button>
+                  <button type="submit" style="letter-spacing: 1.5px;font-family: 'Poppin',sans-serif;text-align: center;margin-right: 30px; margin-bottom: 30px;">Explore More</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
     </header>
 
     <main>
-        <div class="visit-done">
+        <div class="visit-done" >
           <div class="visit_container">
  <div class="visit" >
             <div >
-             <h2 style="font-size: 30px;padding-top: 20px; ">Visit One Of Our Countries Now</h2>
+             <h2 >Visit One Of Our Countries Now</h2>
 
-             <p style="color: aliceblue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
         </div>
 
-       <div class="switzerland">
+       <div class="switzerland" >
   <img src="country-01.jpg" alt="Switzerland" />
 
   <div class="switch">
-    <h2>SWITZERLAND</h2>
-    <div class="switch1">Explore More</div>
-    <div class="city1" style="font-size: 12px;">Europe</div>
+   <div class="row"> 
+    <div class="row1">
+      <h2>SWITZERLAND</h2>
+       <div class="city1">Europe</div>
+    </div>
+    <div class="switch1">Explore More</div></div>
+   
 
     <div class="para">
         Woox Travel is a professional Bootstrap 5 theme HTML CSS layout for your website. You can use this layout for your commercial work.
     </div>
-<hr/>
+<hr class="line1" />
     <!-- <hr style="width: 270px;"/> -->
    
   </div>
@@ -441,55 +458,50 @@
   
 </div>
 
-<div>
-    <div class="arrange" style=" gap: 10px; display: flex;">
+<div class="nplusa">
+  <div class="a">
+      <div class="arrange" >
     <i class="fa-solid fa-user"></i>
-     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+     <div >
                      8.66 Mil
-                       <div
-                        style="font-size: 14px;
-                        "
-                      >
+                       <br/>
                         People
                       </div>
                     
                     </div>
 
-                    <div class="arrange1" style=" gap: 10px;display: flex;">
+                    <div class="arrange1"  >
    <i class="fa-solid fa-globe"></i>
-     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+     <div >
                      41.290 
-                       <div
-                        style="font-size: 14px;
-                        "
-                      >
+                       <br/>
                         km2
                       </div>
                     </div>
-                      <div class="arrange2" style=" gap: 10px;display: flex; flex-direction: column;">
+                      <div class="arrange2" >
  <i class="fa-solid fa-house"></i>
-     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+     <div >
                      
-                       <div
-                        style="font-size: 14px;
-                        "
-                      >
+                       
                         $1.100.200
                       </div>
                     
                     </div>
+  </div>
                  
-</div>
-</div>
+<!-- <div class="line2" ></div> -->
+<hr class="line2" style="height: 1px;"/>
 
-
-</div>
-
-<!-- <hr style=" width: 300px; margin-left: 220px;"/> -->
-
-<div class="need">
+<div class="need" style="margin-bottom: 80px;">
     Need Direction ?  <i class="fa-solid fa-arrow-right"></i>
 </div>
+</div>
+</div>
+
+<hr class="line3" />
+
+
+
 
 
 <!-- <hr style=" width: 590px;"/> -->
@@ -498,14 +510,19 @@
   <img src="country-02.jpg" alt="Switzerland" />
 
   <div class="switch">
-    <h2>CARIBBEAN</h2>
-    <div class="switch1">Explore More</div>
-    <div class="city1" style="font-size: 12px;">North America</div>
+   <div class="row">
+     <div class="row1" style="margin-top: 8px;">
+      <h2>CARIBBEAN</h2>
+         <div class="city1" >North America</div>
+     </div>
+    <div class="switch1" style="margin-bottom: 20px;">Explore More</div>
+   </div>
+  
 
     <div class="para">
        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
     </div>
-
+<hr class="line1" />
     <!-- <hr style="width: 270px;"/> -->
    
   </div>
@@ -513,130 +530,119 @@
   
 </div>
 
-<div>
-    <div class="arrange" style=" gap: 10px; display: flex;">
+<div class="nplusa">
+  <div class="a">
+      <div class="arrange" >
     <i class="fa-solid fa-user"></i>
-     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
-                    44.48 Mil
-                       <div
-                        style="font-size: 14px;
-                        "
-                      >
+     <div >
+                     8.66 Mil
+                       <br/>
                         People
                       </div>
                     
                     </div>
 
-                    <div class="arrange1" style=" gap: 10px;display: flex;">
+                    <div class="arrange1"  >
    <i class="fa-solid fa-globe"></i>
-     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
-                     275.400
-                       <div
-                        style="font-size: 14px;
-                        "
-                      >
+     <div >
+                     41.290 
+                       <br/>
                         km2
                       </div>
                     </div>
-                      <div class="arrange2" style=" gap: 10px;display: flex; flex-direction: column;">
+                      <div class="arrange2" >
  <i class="fa-solid fa-house"></i>
-     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+     <div >
                      
-                       <div
-                        style="font-size: 14px;
-                        "
-                      >
-                        $946.000
+                       
+                        $1.100.200
                       </div>
                     
                     </div>
+  </div>
                  
-</div>
-</div>
+<!-- <div class="line2" ></div> -->
+<hr class="line2" style="height: 1px;"/>
 
-
-
-</div>
-
-<!-- <hr style=" width: 300px;margin-left: 220px;"/> -->
-
-<div  class="need">
-    Need Direction ? <i class="fa-solid fa-arrow-right"></i>
+<div class="need" style="margin-bottom: 80px;">
+    Need Direction ?  <i class="fa-solid fa-arrow-right"></i>
 </div>
 
+</div>
 
-<!-- <hr style=" width: 590px;"/> -->
+</div>
+<hr class="line3" />
+
+
+
 
  <div class="switzerland">
   <img src="country-03.jpg" alt="Switzerland" />
 
   <div class="switch">
-    <h2>FRANCE</h2>
-    <div class="switch1">Explore More</div>
-    <div class="city1" style="font-size: 12px;">Europe</div>
+   <div class="row">
+    <div class="row1 france" >
+       <h2>FRANCE</h2>
+     <div class="city1 " >Europe</div>
+    </div>
+    <div class="switch1 france" style="margin-bottom: 20px;">Explore More</div>
+   </div>
+    
 
     <div class="para">
         We hope this WoOx template is useful for you, please support us a small amount of PayPal to info [at] templatemo.com for our survival. We really appreciate your contribution.
     </div>
-
-    <!-- <hr style="width: 270px;"/> -->
+  <hr class="line1" />
    
   </div>
 
   
 </div>
 
-<div>
-    <div class="arrange" style=" gap: 10px; display: flex;">
+<div class="nplusa">
+  <div class="a">
+      <div class="arrange" >
     <i class="fa-solid fa-user"></i>
-     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
-                     67.41 Mil
-                       <div
-                        style="font-size: 14px;
-                        "
-                      >
+     <div >
+                     8.66 Mil
+                       <br/>
                         People
                       </div>
                     
                     </div>
 
-                    <div class="arrange1" style=" gap: 10px;display: flex;">
+                    <div class="arrange1"  >
    <i class="fa-solid fa-globe"></i>
-     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
-                     551.500 
-                       <div
-                        style="font-size: 14px;
-                        "
-                      >
+     <div >
+                     41.290 
+                       <br/>
                         km2
                       </div>
                     </div>
-                      <div class="arrange2" style=" gap: 10px;display: flex; flex-direction: column;">
+                      <div class="arrange2" >
  <i class="fa-solid fa-house"></i>
-     <div style="color: rgb(211, 209, 209); font-size: 14px; display: flex; flex-direction: column;">
+     <div >
                      
-                       <div
-                        style="font-size: 14px;
-                        "
-                      >
-                        $425.600
+                       
+                        $1.100.200
                       </div>
                     
                     </div>
+  </div>
                  
+<!-- <div class="line2" ></div> -->
+<hr class="line2" style="height: 1px;"/>
+
+<div class="need" style="margin-bottom: 80px;">
+    Need Direction ?  <i class="fa-solid fa-arrow-right"></i>
+</div>
+
 </div>
 </div>
 
-
 </div>
 
-<!-- <hr style=" width: 300px;margin-left: 220px;"/> -->
-
-<div  class="need">
-    Need Direction ? <i class="fa-solid fa-arrow-right"></i>
-</div>
-
-
+          </div>
 <div class="choose">
      <i class="fa-solid fa-arrow-left"></i>
 
@@ -646,9 +652,7 @@
 
  <i class="fa-solid fa-arrow-right"></i>
 </div>
-</div>
 
-          </div>
           <div class="map_container">
 <iframe 
     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d51948.65982011673!2d-80.163602!3d25.941098000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1756833021551!5m2!1sen!2sth" 
